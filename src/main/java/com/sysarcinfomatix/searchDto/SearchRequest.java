@@ -1,5 +1,6 @@
 package com.sysarcinfomatix.searchDto;
 
+
 import lombok.Data;
 
 @Data
@@ -10,9 +11,8 @@ public class SearchRequest {
 	private String planName;
 	private String planStatus;
 	private String gender;
-	private String planStartDate;
+	private String planStartDate;  // yyyy-mm-dd
 	private String planEndDate;
-	
 	public String getPlanName() {
 		return planName;
 	}
@@ -43,6 +43,7 @@ public class SearchRequest {
 	public void setPlanEndDate(String planEndDate) {
 		this.planEndDate = planEndDate;
 	}
+	
 	
 	
 	

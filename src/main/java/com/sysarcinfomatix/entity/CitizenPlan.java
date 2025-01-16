@@ -20,14 +20,16 @@ public class CitizenPlan {
 	private Integer citezenId;
 	private String citezenName;
 	private String planName;
-	private String PlanStatus;
+	private String planStatus;
 	private String gender;
 	private LocalDate planStartDate;
 	private LocalDate planEndDate;
-	private double benifitAmount;
+	private String benifitAmount;
 	private String denialReason;
 	private LocalDate terminatedDate;
 	private String terminationRsn;
+	
+	
 	public Integer getCitezenId() {
 		return citezenId;
 	}
@@ -47,10 +49,10 @@ public class CitizenPlan {
 		this.planName = planName;
 	}
 	public String getPlanStatus() {
-		return PlanStatus;
+		return planStatus;
 	}
 	public void setPlanStatus(String planStatus) {
-		PlanStatus = planStatus;
+		this.planStatus = planStatus;
 	}
 	public String getGender() {
 		return gender;
@@ -70,10 +72,10 @@ public class CitizenPlan {
 	public void setPlanEndDate(LocalDate planEndDate) {
 		this.planEndDate = planEndDate;
 	}
-	public double getBenifitAmount() {
+	public String getBenifitAmount() {
 		return benifitAmount;
 	}
-	public void setBenifitAmount(double benifitAmount) {
+	public void setBenifitAmount(String benifitAmount) {
 		this.benifitAmount = benifitAmount;
 	}
 	public String getDenialReason() {
@@ -94,6 +96,7 @@ public class CitizenPlan {
 	public void setTerminationRsn(String terminationRsn) {
 		this.terminationRsn = terminationRsn;
 	}
+	
 	
 	
 	
