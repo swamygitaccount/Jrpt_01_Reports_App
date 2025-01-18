@@ -52,7 +52,7 @@
             <td><a href="/" class="btn btn_secondary">Reset</a></td>
             <td><button type="submit" class="btn btn-primary">Search</button></td>
             <hr />
-            <p>Export: <a href="">Excel</a> <a href="">PDF</a></p>
+            <p>Export: <a href="/exel">Excel</a> <a href="pdf">PDF</a></p>
         </form:form>
 
         <!-- Table -->
