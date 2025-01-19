@@ -31,7 +31,7 @@ public class ReportController {
 //	}
 //	
 	@GetMapping("/exel") // Corrected the spelling of "/exel" to "/excel"
-	public void excelExport(HttpServletResponse response) throws Exception {
+	public void  excelExport(HttpServletResponse response) throws Exception {
 		// Set the content type for Excel files (application/octet-stream is acceptable
 		// but can be more specific)
 		response.setContentType("application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"); // For .xlsx files
@@ -41,7 +41,8 @@ public class ReportController {
 		response.setHeader("Content-Disposition", "attachment; filename=plans.xlsx");
 
 		// Call the service to export the Excel file to the response
-		service.exportExcel(response);
+		 service.exportExcel(response);
+		
 	}
 
 	@GetMapping("/pdf") // Corrected the spelling of "/exel" to "/excel"
@@ -55,7 +56,8 @@ public class ReportController {
 		response.setHeader("Content-Disposition", "attachment; filename=plans.pdf");
 
 		// Call the service to export the Excel file to the response
-		service.exportpdf(response);
+		 service.exportpdf(response);
+		
 	}
 
 	@PostMapping("/search")
